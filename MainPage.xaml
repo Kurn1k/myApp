@@ -8,11 +8,30 @@
             Padding="40,0"
             Spacing="5">
 
+
             <Image Source="logo.png" HeightRequest="130" Aspect="AspectFit" SemanticProperties.Description="dot net bot in a race car number eight" />
-            <Entry x:Name="EntryField" Placeholder="Enter a word" />
+            <Label
+                Text="CodeTransform Tool" FontSize="20"
+                Style="{StaticResource Headline}"
+                Margin="0,0,0,5"
+                SemanticProperties.HeadingLevel="Level1" />
             <Label x:Name="BinaryLabel" Text="" />
-            <Button x:Name="CounterBtn" Text="Convert to Binary" Clicked="OnCounterClicked" HorizontalOptions="Fill" />
-        
+            <Label x:Name="HexLabel" Text="" />
+            <Label x:Name="CRC32Label" Text="" />
+            <Entry x:Name="EntryField" Placeholder="Введите текст" />
+            
+            <Button x:Name="CounterBtn" Text="Конвертировать" Clicked="OnCounterClicked" HorizontalOptions="Fill" />
+
+            <Label
+                    Text="CodeTransform Tool" FontSize="10"
+                  
+                    Style="{StaticResource Headline}"
+                    Margin="0,0,0,5"/>
+            <Label
+                    Text="CodeTransform Tool" FontSize="10"
+                    
+                    Style="{StaticResource Headline}"
+                    Margin="0,0,0,5"/>      
 
         </VerticalStackLayout>
     </ScrollView>
