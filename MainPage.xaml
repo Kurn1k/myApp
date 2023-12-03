@@ -19,21 +19,18 @@
             <Label x:Name="HexLabel" Text="" />
             <Label x:Name="CRC32Label" Text="" />
             <Entry x:Name="EntryField" Placeholder="Введите текст" />
-            
+
             <Button x:Name="CounterBtn" Text="Конвертировать" Clicked="OnCounterClicked" HorizontalOptions="Fill" />
 
-            <Label
-                    Text="CodeTransform Tool" FontSize="10"
-                  
-                    Style="{StaticResource Headline}"
-                    Margin="0,0,0,5"/>
-            <Label
-                    Text="CodeTransform Tool" FontSize="10"
-                    
-                    Style="{StaticResource Headline}"
-                    Margin="0,0,0,5"/>      
+            
+            <Grid Margin="20,300,20,20">
+                <Label Text="Разработчик Курганов Никита" FontSize="13" HorizontalOptions="Center" />
+                <Label Text="nikita-kurganov@yandex.ru" FontSize="13" HorizontalOptions="Center" Margin="0,20,0,0" />
+            </Grid>
+
 
         </VerticalStackLayout>
+        
     </ScrollView>
 
 </ContentPage>
