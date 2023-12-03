@@ -17,7 +17,7 @@ namespace MyApp
 
         private void OnCounterClicked(object sender, EventArgs e)
         {
-            string inputWord = EntryField.Text; // Получаем введенное слово из Entry
+            string inputWord = EntryField.Text; 
             if (!string.IsNullOrWhiteSpace(inputWord))
             {
                 string binaryResult = ConvertToBinary(inputWord);
@@ -28,7 +28,7 @@ namespace MyApp
                 HexLabel.Text = $"Hex: {hexResult}";
                 CRC32Label.Text = $"CRC32: {crc32Result}";
 
-                // Копирование результатов в буфер обмена
+                
                 Clipboard.SetTextAsync($"{binaryResult}\n{hexResult}\nCRC32: {crc32Result}");
 
                 SemanticScreenReader.Announce("Text converted and copied to clipboard.");
@@ -67,7 +67,7 @@ namespace MyApp
         {
             var crc32 = Crc32Algorithm.Compute(Encoding.UTF8.GetBytes(word));
 
-            // Преобразование CRC32 в строку
+            
             return crc32.ToString("X8");
         }
     }
